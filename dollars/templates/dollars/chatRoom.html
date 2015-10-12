@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>DOLLARS</title>   
+   
+    <link href="/dollars/css/app.css"  rel="stylesheet">
+    <script type='text/javascript' src="/dollars/javascript/jquery-1.11.3.js"></script>
+    <script type='text/javascript' src="/dollars/javascript/app.js"></script>
+</head>
+
+<body>
+    <div id="body">
+        <div class="message_box select-none">
+            <div class="message_box_inner">
+                    <div class="clearfix">
+                        <h2 id="room_name" class="select-text">
+                            <span class="room-title-name">夏之眠酒馆(装修中)</span>
+                        </h2>
+                           <!--三个按钮在此ul下-->
+                       <ul class="menu">
+                            <li id="musicShare" class="music needsclick music_on" style="display: list-item;">
+                              <i class="icon icon-music"></i>
+                            </li>
+                            <li id="onlineUser" class="setting needsclick " style="display: list-item;">
+                              <i class="icon icon-users"></i>
+                            </li>                   
+                            
+                            <li id="talkSetting" class="offline" style="display: list-item;">
+                              <ul class="dropdown-menu pull-right" role="menu" aria-labelledby="drop6">
+                                    <li><a class="needsclick" role="menuitem" tabindex="-1" href="http://drrr.xxx/">离线讨论</a></li>
+                                    <li role="presentation" class="divider"></li>
+                                    <li class="logout needsclick"><a class="btn-link" type="submit" name="logout">登出</a></li>
+                              </ul>
+                            </li>
+                            
+                       </ul>
+                    </div>
+                    <div class="room-input-wrap">
+                        <textarea id="message-textarea" name="message" class="form-control" tabindex="1" maxlength="140"></textarea>   
+                    </div>
+                    <!--聊天信息输入-->
+                    <div class="room-submit-wrap">
+                        <input id="room-submit-btn" type="submit" class="form-control room-submit-btn" name="post" value="POST!" tabindex="3">
+                    </div>
+                    <!--在线人员-->
+                    <ul id="members" class="room-members panel-hide">
+                        <li class="member">周 (host)</li>
+                        <li class="member">破破的桥 </li>
+                    </ul>
+                    <!--用户信息-->
+                    <ul class="panel-hide">
+                        <li id="user_id">fad632cee4459f4bd47478b44072b2f2</li>
+                        <li id="user_name" class="select-text">破破的桥</li>
+                        <li id="user_icon">tanaka-2x</li>
+                    </ul>
+                <div id="setting_pannel" class="panel-hide">
+                    <ul id="user_list" class="user-list"></ul>
+                </div>
+            </div>
+
+            <div id="connection-indicator" class="notification-bar warning">Connection lost, reconnecting…</div>
+            <div id="unread-indicator" class="notification-bar notice">
+                <span class="counter">0</span>
+                <span class="pp-form singular">new message</span>
+                <span class="pp-form plurals">new messages</span>
+            </div>
+        </div>
+        <!-- end #header -->
+
+        <div id="talks" class="talks select-none">
+            <div class="talk system" time="1442322893" id="6bd2d13d43a04bef8cd197185d930c34" uid="fad632cee4459f4bd47478b44072b2f2">►► 破破的桥 加入房间 </div>
+            <div class="talk system" time="1442322630" id="7a66f0d6750aeada6d178313712702b6" uid="d4abe2e264db0a69fd8a2bfe67c8f248">►► 哭 退出房间 </div>
+            <dl class="talk  setton-2x" time="1442322627" id="1dc38dd18cec263628ab0a366211a33d">
+                <dt class="dropdown">
+                    <div class="avatar avatar-setton-2x"><span>哭</span></div>
+                    <div data-toggle="dropdown" class="name"><span class="select-text">哭</span></div>
+<!--                    <ul class="dropdown-menu" role="menu" data-id="d4abe2e264db0a69fd8a2bfe67c8f248" data-icon="setton-2x" data-name="哭"></ul>-->
+                </dt>
+                <dd>
+                    <div class="bubble">
+                        <p class="body select-text">唉</p>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+        <!-- /#talks -->
+    </div>
+</body>
+
+</html>
+
+
+
+
+    
